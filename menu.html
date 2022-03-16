@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      nav > ul {
+        display: flex;
+      }
+      nav li {
+        list-style: none;
+        margin: 0 10px;
+        padding: 3px 10px;
+        border-radius: 5px;
+      }
+      nav li:hover {
+        background-color: #ddd;
+      }
+      nav li a {
+        text-decoration: none;
+      }
+      .dropdown {
+        display: none;
+        position: absolute;
+        background-color: lightpink;
+        padding: 0px;
+        margin: 3px 0 0 0;
+      }
+      .dropdown li {
+        margin: 0px;
+      }
+      .show-dropdown:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="show-dropdown">
+            <a href="#"
+              >Form
+              <ul class="dropdown">
+                <li><a href="">link-1</a></li>
+                <li><a href="">link-2</a></li>
+                <li><a href="">link-3</a></li>
+                <li><a href="">link-4</a></li>
+                <li><a href="">link-5</a></li>
+              </ul>
+            </a>
+          </li>
+          <li class="show-dropdown">
+            <a href="#"
+              >Table
+              <ul class="dropdown">
+                <li><a href="">link-1</a></li>
+                <li><a href="">link-2</a></li>
+                <li><a href="">link-3</a></li>
+                <li><a href="">link-4</a></li>
+              </ul>
+            </a>
+          </li>
+          <li class="show-dropdown">
+            <a href="#"
+              >Semantic
+              <ul class="dropdown">
+                <li><a href="">link-1</a></li>
+                <li><a href="">link-2</a></li>
+                <li><a href="">link-3</a></li>
+                <li><a href="">link-4</a></li>
+                <li><a href="">link-5</a></li>
+                <li><a href="">link-6</a></li>
+              </ul>
+            </a>
+          </li>
+          <li class="show-dropdown">
+            <a href="#"
+              >About us
+              <ul class="dropdown">
+                <li><a href="">link-1</a></li>
+                <li><a href="">link-2</a></li>
+                <li><a href="">link-3</a></li>
+              </ul>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Welcome to my website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit eligendi
+        deleniti aliquam adipisci aut saepe dolorem officia laboriosam ut! Sunt,
+        laboriosam. Possimus ad perferendis adipisci maxime eveniet doloremque
+        neque ratione nulla molestiae veritatis, hic eaque? Nobis quae
+        blanditiis distinctio minima sed eligendi alias consectetur dolorem nam
+        dolore eos laudantium veniam, adipisci deleniti, mollitia architecto
+        unde voluptas laboriosam. Culpa temporibus, quaerat doloribus
+        voluptatibus eveniet ducimus aliquam iste! Unde impedit a dolores maxime
+        dolor expedita fugiat repellendus consectetur consequatur, ab molestias
+        exercitationem. Corporis, rem? Consequuntur tempora cumque nostrum
+        deleniti eaque dolore accusamus magni quos harum doloribus esse, ab
+        doloremque quasi, eligendi maxime.
+      </p>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      @keyframes ball {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+        33% {
+          background-color: green;
+          left: 135px;
+          top: 270px;
+        }
+        66% {
+          background-color: blue;
+          left: 270px;
+          top: 0px;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+          background-color: red;
+        }
+      }
+
+      .field {
+        width: 320px;
+        height: 320px;
+        border: 2px solid green;
+      }
+      .ball {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        position: relative;
+        animation-name: ball;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-duration: 4s;
+        animation-direction: initial;
+        animation-delay: 0.1s;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: scale;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rayhan vai er kolla</h1>
+    <div class="field">
+      <img class="ball" src="images/rayhan.png" alt="" />
+    </div>
+  </body>
+</html>
